@@ -2,6 +2,21 @@ import streamlit as st
 import pickle
 import numpy as np
 import os
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# Install necessary packages
+try:
+    import streamlit as st
+    import numpy as np
+    import pickle
+except ImportError as e:
+    packages = ['streamlit', 'numpy', 'scikit-learn', 'pandas']
+    for package in packages:
+        install(package)
 
 symptoms=np.array(['itching', 'skin_rash', 'nodal_skin_eruptions',
        'continuous_sneezing', 'shivering', 'chills', 'joint_pain',
