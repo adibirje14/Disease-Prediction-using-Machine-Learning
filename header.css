@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ /* Header styles */
+ header {
+     background-color: #D2E3C8;
+     padding: 2rem 0;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .logo {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .logo h2 {
+     font-size: 24px;
+     font-weight: bold;
+     color: #1b4e38;
+ }
+ 
+ .nav-a ul {
+     list-style: none;
+     display: flex;
+ }
+ 
+ .nav-a li {
+     margin-left: 20px;
+ }
+ 
+ .nav-a li a {
+     text-decoration: none;
+     color: #1b4e38;
+     font-size: 18px;
+     font-weight: bold;
+ }
+ 
+ .nav-a li a:hover {
+     color: #4a8d70;
+ }
+ 
