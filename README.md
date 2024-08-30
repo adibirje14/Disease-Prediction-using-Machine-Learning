@@ -1,3 +1,5 @@
+Disease Prediction using Machine Learning: 
+
 This project integrates predictive algorithms for health prognosis, enabling accurate disease prediction and enhancing proactive healthcare management. 
 
 Features: 
