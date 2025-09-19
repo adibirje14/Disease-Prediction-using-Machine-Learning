@@ -36,15 +36,25 @@ This project integrates predictive algorithms for health prognosis, enabling acc
 **Project Structure**
 
 Disease-Prediction-using-Machine-Learning/
+
 ├── .devcontainer/ → Dev environment config files
+
 ├── Training2.csv → Training dataset
+
 ├── Testing3.csv → Testing / validation dataset
+
 ├── final_rf_model.pkl → Trained Random Forest model
+
 ├── Project1.ipynb → Notebook for experimentation / model building
+
 ├── test.py / testt2.py → Scripts for running predictions
+
 ├── home.js / home.css / header.css → Front-end JS & CSS resources
+
 ├── first.jpeg / second.webp → Images / assets
+
 ├── requirements.txt → Python dependencies
+
 └── README.md → Project documentation
 
 **Tech Stack**
