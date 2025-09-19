@@ -5,20 +5,32 @@ This project integrates predictive algorithms for health prognosis, enabling acc
 **🧠 Table of Contents**
 
 -> Features
+
 -> Project Structure
+
 -> Tech Stack
+
 -> Setup & Installation
+
 -> Usage
+
 -> Model Training & Deployment
+
 -> LangChain API for Symptom Extraction
+
 
 **Features**
 
 -> Predictive algorithms: Builds machine learning models to predict potential diseases based on user data.
+
 -> Web Interface: UI built with HTML, CSS, JavaScript for user-friendly interaction.
+
 -> Model Serialization: Uses Pickle to save & load trained models.
+
 -> Interactive UI: Optionally using Streamlit for real-time interaction and demo.
+
 -> Testing & CSV Inputs: Supports test cases via CSV files; has scripts for prediction.
+
 -> LangChain Integration: Converts natural problem descriptions into structured symptom lists using Google Gemini API.
 
 **Project Structure**
@@ -38,11 +50,17 @@ Disease-Prediction-using-Machine-Learning/
 **Tech Stack**
 
 -> Languages: Python, JavaScript, HTML, CSS
+
 -> ML Libraries: scikit-learn, pandas, numpy
+
 -> LangChain: For LLM-powered symptom extraction
+
 -> LLM: Google Gemini Pro API
+
 -> Frameworks: Streamlit, Flask, Flask-Ngrok
+
 -> Data Format: CSV
+
 -> Tools: Pickle, Jupyter Notebook
 
 **Setup & Installation**
@@ -67,21 +85,29 @@ For Google Colab setup, install extra packages:
 **Usage**
 
 -> Jupyter Notebook: Open Project1.ipynb to explore data, training, and evaluation.
+
 -> Prediction scripts: Run test.py or testt2.py to make predictions on given inputs or CSV data.
+
 -> Front-end / UI: Use the HTML/JS/CSS files to build a simple interface for inputs and predictions.
+
 -> Streamlit (if used): streamlit run test.py
 
 **Model Training & Deployment**
 
 -> The ML model (Random Forest) is trained using the training dataset.
+
 -> Once satisfied with performance, the model is saved as final_rf_model.pkl.
+
 -> The prediction scripts or UI load this model to make real-time predictions without retraining.
+
 -> LangChain API for Symptom Extraction: We integrated LangChain with Google Gemini Pro API to process natural language health queries and automatically extract symptoms from a predefined list.
 
 **How It Works**
 
 - User enters a free-text health problem description (e.g., “My nose has been itchy for two days, I have a sore throat, and I started getting a headache this morning”).
+  
 - The system uses LangChain PromptTemplate and Gemini Pro LLM to match symptoms against a predefined medical symptom list.
+  
 - The API returns a JSON list of identified symptoms, which is then passed to the disease prediction model.
 
 **Example Output**
